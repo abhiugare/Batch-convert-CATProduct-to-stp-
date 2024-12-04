@@ -10,7 +10,7 @@ Sub CATMain()
      ' The StartProcessing function will use the paths from the UserForm
 
 End Sub
-'----------------------------------------------------------------------------------------------------------------
+
 Sub StartProcessing(inputFolderPath As String, outputFolderPath As String)
 
     Dim cat As Application

@@ -2,12 +2,12 @@
 
 Sub CATMain()
 
-    ' Show the UserForm to get the user input paths
+' Show the UserForm to get the user input paths
     Dim UserForm As New UserForm1
     UserForm.Show
 
-    ' When the user presses the ProcessButton, the processing function is called
-    ' The StartProcessing function will use the paths from the UserForm
+ ' When the user presses the ProcessButton, the processing function is called
+ ' The StartProcessing function will use the paths from the UserForm
 
 End Sub
 

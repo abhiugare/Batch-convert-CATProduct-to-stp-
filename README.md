@@ -1,26 +1,26 @@
 
 Private Sub CommandButton1_Click()
-With Application.FileDialog(msoFileDialogFolderPicker)
-        .Title = "Select Input Folder"
-        If .Show = -1 Then ' If the user selects a folder
-            TextBox1.Value = .SelectedItems(1) ' Store the path in TextBox1
-        End If
-    End With
+        With Application.FileDialog(msoFileDialogFolderPicker)
+                .Title = "Select Input Folder"
+                If .Show = -1 Then ' If the user selects a folder
+                    TextBox1.Value = .SelectedItems(1) ' Store the path in TextBox1
+                End If
+            End With
 End Sub
 
 Private Sub CommandButton2_Click()
-With Application.FileDialog(msoFileDialogFolderPicker)
-        .Title = "Select Output Folder"
-        If .Show = -1 Then ' If the user selects a folder
-            TextBox2.Value = .SelectedItems(1) ' Store the path in TextBox2
-        End If
-    End With
+        With Application.FileDialog(msoFileDialogFolderPicker)
+                .Title = "Select Output Folder"
+                If .Show = -1 Then ' If the user selects a folder
+                    TextBox2.Value = .SelectedItems(1) ' Store the path in TextBox2
+                End If
+            End With
 End Sub
 
 Private Sub CommandButton3_Click()
-   ' Call the main process function with paths from TextBoxes
-    Call StartProcessing(TextBox1.Value, TextBox2.Value)
-    Me.Hide ' Hide the UserForm after processing
+           ' Call the main process function with paths from TextBoxes
+            Call StartProcessing(TextBox1.Value, TextBox2.Value)
+            Me.Hide ' Hide the UserForm after processing
 End Sub
 
 
